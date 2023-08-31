@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency</title>
+  <style>
+    *{
+      margin: 0;
+    }
+    .container{
+      background-color: #222;
+      width: 70%;
+      margin: 80px auto;
+      padding: 30px 0;
+      text-align: center;
+      border-radius: 20px;
+    }
+    @media (max-width:1500px) {
+      .container{    
+      width: 85%;
+    }
+    }
+    .container p{
+      font-size: 25px;
+      font-weight: bold;
+      color: rgb(255, 38, 0);
+    }
+    input{
+      padding: 10px;
+      margin: 20px;
+      border-radius: 15px;
+      font-size: 20px;
+      outline: none;
+    }
+    .change{
+      color: #eee;
+      font-weight: bold;
+      background-color: rgb(255, 38, 0);
+      cursor: pointer;
+    }
+    .egp, .sar{
+      font-size: 25px;
+      color: #eee;
+      margin: 15px 0;
+    }
+    .sar{
+      margin-top: 30px;
+    }
+    .egp span, .sar span{
+      padding: 0 5px;
+      color: rgb(255, 38, 0);
+    }
+    .footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #222;
+      color: white;
+      text-align: center;
+      display: flex; 
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+    }
+    .footer span {
+      padding: 10px 10px 10px 5px;
+      color: rgb(255, 38, 0);
+      font-weight: bold;
+      font-size: 26px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p>Change USD TO EGP & SAR</p>
+    <input type="text" class="input">
+    <input type="button" value="change" class="change">
+    <div class="egp">Thats Equal To <span></span> Egyptian Pound</div>
+    <div class="sar">Thats Equal To <span></span> Saudi Riyals</div>
+  </div>
+  <div class="footer">
+    Made by<span>Mazin Emad</span>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
